@@ -1,0 +1,18 @@
+:root{
+    //add variables
+}
+
+#cursor{
+    
+}
+
+.cursor-shown{
+    background-color: green;
+    opacity: 90%;
+    height: 20px;
+    width: 10px;    
+}
+
+.cursor-hidden{
+    display: none; 
+}
