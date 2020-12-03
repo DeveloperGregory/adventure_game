@@ -19,3 +19,4 @@ Command Entry System?
 ## Change Log 
 Created repository and added readme.
 Updated Readme
+Created pages, styles and started scripting. Added a cursor blink
