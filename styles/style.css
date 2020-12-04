@@ -1,9 +1,18 @@
-:root{
-    //add variables
+#command-line{
+    margin-left: 5px;
 }
 
 #cursor{
     
+}
+
+#display{
+    background-color: black;
+    color: green;
+    display: flex;
+    height: 500px;
+    width: 70%;
+
 }
 
 .cursor-shown{
@@ -15,4 +24,9 @@
 
 .cursor-hidden{
     display: none; 
+}
+
+.on-bottom{
+    position: absolute;
+    top: 85%;
 }
