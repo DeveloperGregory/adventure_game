@@ -7,7 +7,10 @@ let gameModel = {
 }
 
 function moveCursor(direction){
-    gameModel.cursorPOS += (direction) ? 7 : -7;
+    gameModel.cursorPOS += (direction) ? 7.5 : -7.5;
+    if(gameModel.cursorPOS < 2){
+        clearCommandLine();
+    }
     gameCursor.style.left = gameModel.cursorPOS + "px";
 }
 
@@ -22,7 +25,6 @@ function blinkCursor(){
 }
 
 function addtoCommandLine(key, direction){
-    let prevHTML = cmd.innerHTML;
     gameModel.commandLine += key;
     cmd.innerHTML = gameModel.commandLine;
     moveCursor(direction);
@@ -30,7 +32,7 @@ function addtoCommandLine(key, direction){
 
 function clearCommandLine(){
     gameModel.commandLine = ''
-    gameModel.cursorPOS = 8;
+    gameModel.cursorPOS = 12;
     gameCursor.style.left = gameModel.cursorPOS + "px";
     cmd.innerHTML = '';
 }

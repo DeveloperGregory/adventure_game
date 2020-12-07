@@ -1,32 +1,48 @@
-#command-line{
-    margin-left: 5px;
-}
-
-#cursor{
-    
+body{
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #display{
     background-color: black;
     color: green;
-    display: flex;
-    height: 500px;
-    width: 70%;
-
+    height: 600px;
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+    width: 75%;
 }
 
-.cursor-shown{
+#navbar{
     background-color: green;
-    opacity: 90%;
-    height: 20px;
-    width: 10px;    
+    padding: 10px;
+    position: fixed;
+    text-align: right;
+    top: 0px;
+    width: 100%;
 }
 
-.cursor-hidden{
-    display: none; 
+#navbar a{
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    background-color: black;
+    color: green;
+    opacity: 75%;
+    
+}
+
+#title{
+    position: relative;
+    top: 20px;
 }
 
 .on-bottom{
-    position: absolute;
-    top: 85%;
+    margin-left: 5px;
+    position: relative;
+    top: 540px;
 }
